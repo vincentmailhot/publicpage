@@ -1,0 +1,49 @@
+html {
+    background-color: grey;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-family: Rubik Doodle Shadow;
+    font-size: xx-large;
+    display: block;
+    margin-top: 0.67em;
+}
+
+.social-media-link:hover {
+    background-color: rgba(96, 93, 93, 0);
+}
+
+.social-media-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 10px;
+    text-decoration: none;
+    overflow: hidden;
+    /* Add this to prevent the image from overflowing the circular link */
+}
+
+.social-media-link img {
+    display: block;
+    /* Make the image a block element to remove any extra space around it */
+    max-width: 100%;
+    /* Make the image take up the full width of the link */
+    height: auto;
+    /* Adjust the height automatically to maintain the image's aspect ratio */
+    object-fit: cover;
+    /* This will cover the whole area of the link, potentially cropping the image */
+}
+
+.social-media {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Center the links on the line */
+    gap: 10px;
+    /* Add some space between the links */
+}
